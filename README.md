@@ -77,6 +77,12 @@ Others such as data scientist [Martina Cantaro](https://medium.com/@docintangibl
 
 For all of these reasons, data professionals and educators such as [Colleen Crangle](https://www.linkedin.com/pulse/its-time-retire-boston-housing-dataset-colleen-e-crangle/) have said "It’s time to retire the Boston Housing data set". Nowadays the preferred housing prices dataset for educational purposes is the [Ames Housing dataset](https://www.kaggle.com/datasets/prevek18/ames-housing-dataset), which was published with the paper [*Ames, Iowa: Alternative to the Boston Housing Data as an End of Semester Regression Project*](http://jse.amstat.org/v19n3/decock.pdf). This dataset is larger and messier than the Boston Housing dataset and also avoids some of its thorny ethical issues.
 
+As Crangle wrote:
+
+> So this outdated data set, while not meaning to racially profile neighborhoods, leads to racist interpretations of the data — especially when the data set is not put into its proper historical context in data science courses.
+
+By using the Boston Housing dataset, even in an educational context, an analysis might thus lead to unintentionally discriminatory outcomes -- or in other words, _disparate impact_. Therefore even now as you are still learning the basics of data analysis, it is important to recognize these kinds of potential impacts.
+
 ## Summary
 
 Protected characteristics come from legal protections against discrimination, and include categories of age, race, sex, etc. In many circumstances it is illegal to treat people unequally based on these characteristics, regardless of whether it is intentional (disparate treatment) or unintentional (disparate impact). Sensitive features form a broader category that includes protected characteristics as well as PII and other forms of personal data. Data professionals should be careful when working with sensitive features as well as their proxies. This includes educational contexts, where there is a movement away from ethically dubious datasets such as the Boston Housing dataset and towards alternatives such as the Ames Housing dataset.
