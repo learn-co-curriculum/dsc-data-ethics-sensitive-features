@@ -2,6 +2,8 @@
 
 ## Introduction
 
+As you learn how to tackle larger and more complicated datasets, it is important to consider the ethical implications of certain types of features. After going through some definitions of terms like "protected characteristics" and "sensitive features" this lesson will dive into a case study of the ethical problems with the widely-used "Boston Housing" dataset.
+
 ## Objectives
 
 You will be able to:
@@ -76,3 +78,5 @@ Others such as data scientist [Martina Cantaro](https://medium.com/@docintangibl
 For all of these reasons, data professionals and educators such as [Colleen Crangle](https://www.linkedin.com/pulse/its-time-retire-boston-housing-dataset-colleen-e-crangle/) have said "It’s time to retire the Boston Housing data set". Nowadays the preferred housing prices dataset for educational purposes is the [Ames Housing dataset](https://www.kaggle.com/datasets/prevek18/ames-housing-dataset), which was published with the paper [*Ames, Iowa: Alternative to the Boston Housing Data as an End of Semester Regression Project*](http://jse.amstat.org/v19n3/decock.pdf). This dataset is larger and messier than the Boston Housing dataset and also avoids some of its thorny ethical issues.
 
 ## Summary
+
+Protected characteristics come from legal protections against discrimination, and include categories of age, race, sex, etc. In many circumstances it is illegal to treat people unequally based on these characteristics, regardless of whether it is intentional (disparate treatment) or unintentional (disparate impact). Sensitive features form a broader category that includes protected characteristics as well as PII and other forms of personal data. Data professionals should be careful when working with sensitive features as well as their proxies. This includes educational contexts, where there is a movement away from ethically dubious datasets such as the Boston Housing dataset and towards alternatives such as the Ames Housing dataset.
