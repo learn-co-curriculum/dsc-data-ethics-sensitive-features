@@ -50,38 +50,7 @@ Many data science examples tend to return over and over again to "classic" datas
 
 One of these datasets, which is currently built in to scikit-learn, is the [Boston Housing](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_boston.html) dataset. It contains data from a [1978 paper](https://www.researchgate.net/publication/4974606_Hedonic_housing_prices_and_the_demand_for_clean_air) that attempted to model the amount that people were willing to pay for cleaner air near their homes.
 
-These are the features listed in the Boston Housing dataset:
-
-* `CRIM`: per capita crime rate by town
-* `ZN`: proportion of residential land zoned for lots over 25,000 sq.ft.
-* `INDUS`: proportion of non-retail business acres per town
-* `CHAS`: Charles River dummy variable (= 1 if tract bounds river; 0 otherwise)
-* `NOX`: nitric oxides concentration (parts per 10 million)
-* `RM`: average number of rooms per dwelling
-* `AGE`: proportion of owner-occupied units built prior to 1940
-* `DIS`: weighted distances to five Boston employment centres
-* `RAD`: index of accessibility to radial highways
-* `TAX`: full-value property-tax rate per &#36;10,000
-* `PTRATIO`: pupil-teacher ratio by town
-* `B`: 1000(Bk - 0.63)^2 where Bk is the proportion of blacks by town
-* `LSTAT`: % lower status of the population
-* `MEDV`: Median value of owner-occupied homes in &#36;1000's
-
-Do you notice any that correspond to protected characteristics?
-
-The feature that has caused controversy in recent years is the **"B" feature**. It contains dated language referring to Black people as "blacks", seems like a questionable feature to include when 1970s Boston had relatively few Black people, and has this strange quadratic transformation applied to it.
-
-Data scientist M Carlisle investigated that quadratic transformation in [this Medium post](https://medium.com/@docintangible/racist-data-destruction-113e3eff54a8) and found that it both destroyed some data (because it was a non-invertible transformation) and that it appears to be based on a since-disproven racist hypothesis of housing prices based on "self-segregation". This investigation led to the [deprecation](https://github.com/scikit-learn/scikit-learn/issues/16155) and planned removal of the dataset from scikit-learn.
-
-Others such as data scientist [Martina Cantaro](https://medium.com/@docintangible/racist-data-destruction-113e3eff54a8) have noted that the "B" feature is not the only problem with the Boston Housing dataset. The prices and geographic regions are outdated, there are [major mistakes in the target column](https://spatial-statistics.com/pace_manuscripts/jeem_ms_dir/pdf/fin_jeem.pdf), and some values are artificially capped at &#36;50k. The original paper's analysis has also not stood up to recent [revalidation efforts](https://openjournals.wu.ac.at/region/paper_107/107.html).
-
-For all of these reasons, data professionals and educators such as [Colleen Crangle](https://www.linkedin.com/pulse/its-time-retire-boston-housing-dataset-colleen-e-crangle/) have said "It’s time to retire the Boston Housing data set". Nowadays the preferred housing prices dataset for educational purposes is the [Ames Housing dataset](https://www.kaggle.com/datasets/prevek18/ames-housing-dataset), which was published with the paper [*Ames, Iowa: Alternative to the Boston Housing Data as an End of Semester Regression Project*](http://jse.amstat.org/v19n3/decock.pdf). This dataset is larger and messier than the Boston Housing dataset and also avoids some of its thorny ethical issues.
-
-As Crangle wrote:
-
-> So this outdated data set, while not meaning to racially profile neighborhoods, leads to racist interpretations of the data — especially when the data set is not put into its proper historical context in data science courses.
-
-By using the Boston Housing dataset, even in an educational context, an analysis might thus lead to unintentionally discriminatory outcomes -- or in other words, _disparate impact_. Therefore even now as you are still learning the basics of data analysis, it is important to recognize these kinds of potential impacts.
+In the upcoming case study, we will examine the Boston Housing Data Set and discuss the potential ethical implications of this problematic dataset.
 
 ## Summary
 
