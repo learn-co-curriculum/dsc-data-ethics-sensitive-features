@@ -48,7 +48,7 @@ Considering this, a credit card company that uses zip code as a factor to decide
 
 Many data science examples tend to return over and over again to "classic" datasets, many of which can be found on the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets.php) or [Kaggle](https://www.kaggle.com/datasets). Some of these datasets are even built in to Python packages like [Seaborn](https://seaborn.pydata.org/generated/seaborn.load_dataset.html), [StatsModels](https://www.statsmodels.org/dev/datasets/index.html), and [scikit-learn](https://scikit-learn.org/stable/datasets/toy_dataset.html).
 
-One of these datasets, which is currently built in to scikit-learn, is the [Boston Housing](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_boston.html) dataset. It contains data from a [1978 paper](https://www.researchgate.net/publication/4974606_Hedonic_housing_prices_and_the_demand_for_clean_air) that attempted to model the amount that people were willing to pay for cleaner air near their homes.
+One of these datasets, which was built in to scikit-learn, is the [Boston Housing](https://web.archive.org/web/20221207230700/https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_boston.html) dataset. It contains data from a [1978 paper](https://www.researchgate.net/publication/4974606_Hedonic_housing_prices_and_the_demand_for_clean_air) that attempted to model the amount that people were willing to pay for cleaner air near their homes.
 
 In the upcoming case study, we will examine the Boston Housing Data Set and discuss the potential ethical implications of this problematic dataset.
 
